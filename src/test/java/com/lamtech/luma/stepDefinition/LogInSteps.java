@@ -32,8 +32,8 @@ public class LogInSteps {
 
     @And("^user clicks on Sign In page$")
     public void userClicksOnSignInPage() {
-        //driver.findElement(By.cssSelector("#send2 > span")).click();
-        driver.findElement(By.xpath("//*[@id=\"send2\"]/span")).click();
+        driver.findElement(By.cssSelector("#send2 > span")).click();
+        //driver.findElement(By.xpath("//*[@id=\"send2\"]/span")).click();
 
     }
 
