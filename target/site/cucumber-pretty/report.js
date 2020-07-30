@@ -119,7 +119,7 @@ formatter.match({
   "location": "LogInSteps.userIsOnSignInPage()"
 });
 formatter.result({
-  "duration": 12490709884,
+  "duration": 10045259073,
   "status": "passed"
 });
 formatter.match({
@@ -132,7 +132,7 @@ formatter.match({
   "location": "LogInSteps.userEntersTheAddress(String)"
 });
 formatter.result({
-  "duration": 851204269,
+  "duration": 878519901,
   "status": "passed"
 });
 formatter.match({
@@ -145,21 +145,21 @@ formatter.match({
   "location": "LogInSteps.userInputsThe(String)"
 });
 formatter.result({
-  "duration": 455711539,
+  "duration": 216166534,
   "status": "passed"
 });
 formatter.match({
   "location": "LogInSteps.userClicksOnSignInPage()"
 });
 formatter.result({
-  "duration": 1594813579,
+  "duration": 1482617674,
   "status": "passed"
 });
 formatter.match({
   "location": "LogInSteps.userMyDashboardPageIsDisplayed()"
 });
 formatter.result({
-  "duration": 313396953,
+  "duration": 54581,
   "status": "passed"
 });
 });

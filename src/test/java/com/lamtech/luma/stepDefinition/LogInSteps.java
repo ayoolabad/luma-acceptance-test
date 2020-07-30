@@ -1,5 +1,7 @@
 package com.lamtech.luma.stepDefinition;
 
+import com.lamtech.luma.pageObject.CreateAccountPagePO;
+import com.lamtech.luma.pageObject.LogInPagePO;
 import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -22,23 +24,28 @@ public class LogInSteps {
 
     @When("^user enters the \"([^\"]*)\" address$")
     public void userEntersTheAddress(String Email) throws Throwable {
-        driver.findElement(By.name("login[username]")).sendKeys(Email);
+        //driver.findElement(By.name("login[username]")).sendKeys(Email);
+        LogInPagePO logInPagePO = new LogInPagePO(driver);
+        logInPagePO.enterEmail(Email);
     }
 
     @And("^user inputs the \"([^\"]*)\"$")
     public void userInputsThe(String Password) throws Throwable {
-        driver.findElement(By.name("login[password]")).sendKeys(Password);
+        //driver.findElement(By.name("login[password]")).sendKeys(Password);
+        LogInPagePO logInPagePO = new LogInPagePO(driver);
+        logInPagePO.enterPassword(Password);
     }
 
     @And("^user clicks on Sign In page$")
     public void userClicksOnSignInPage() {
-        driver.findElement(By.cssSelector("#send2 > span")).click();
+        //driver.findElement(By.cssSelector("#send2 > span")).click();
         //driver.findElement(By.xpath("//*[@id=\"send2\"]/span")).click();
-
+        LogInPagePO logInPagePO = new LogInPagePO(driver);
+        logInPagePO.clickSignInButton();
     }
 
     @Then("^user MyDashboard page is displayed$")
     public void userMyDashboardPageIsDisplayed() {
-        driver.quit();
+        //driver.quit();
     }
 }

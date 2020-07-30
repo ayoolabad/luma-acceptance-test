@@ -11,6 +11,7 @@ import org.junit.runner.RunWith;
         glue = {"com.lamtech.luma.stepDefinition"},
         format = {"pretty","html:target/site/cucumber-pretty"},
         tags = {"@LogIn"}
+
 )
 
 
